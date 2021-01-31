@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    background-color: #e6e6e6;
 
     html {
         scroll-behavior: smooth;
@@ -10,6 +9,7 @@
     body {
         // overflow-x: hidden;
         font-family: sans-serif;
+        background-color: #e6e6e6;
 
         button {
             cursor: pointer;

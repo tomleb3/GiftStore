@@ -7,7 +7,7 @@ export class AppFilter extends Component {
     }
 
     onFilter = (ev) => {
-        this.props.onSetFilter(ev.target.value)
+        this.props.onSetFilter(ev)
         console.log(this.state)
     }
 
@@ -23,7 +23,6 @@ export class AppFilter extends Component {
 
     render() {
         return <div className="app-filter">
-            <h4>Filter</h4>
             <form>
                 <select name="gender" onChange={this.onFilter}>
                     <option value="">Both</option>

@@ -24,12 +24,13 @@ export class Home extends Component {
         this.setState({ Stores, Products, filteredProducts })
     }
 
-    onSetFilter = (value) => {
+    onSetFilter = (ev) => {
+        const {value} = ev.target
         let { Stores, Products, filteredProducts } = this.state
         filteredProducts = []
         Products.filter(product => {
             if (!value) filteredProducts.push(product)
-            if (value.length <= 1) {
+            if (ev.target.name === 'gender') {
                 product.ProductTags.filter(tag => {
                     if (tag === +value) filteredProducts.push(product)
                 })
