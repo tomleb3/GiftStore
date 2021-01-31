@@ -1,0 +1,16 @@
+.app-filter {
+    // margin: auto;
+    text-align: center;
+    margin: 35px 0;
+
+    h4 {
+        margin-block-end: 10px;
+    }
+
+    select {
+        font-size: 1.2em;
+        &:not(:last-of-type) {
+            margin-inline-end: 25px;
+        }
+    }
+}

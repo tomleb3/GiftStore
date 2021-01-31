@@ -1,0 +1,38 @@
+.app-header {
+    .nav-pages {
+        width: 100vw;
+        background-color: #a05757;
+        padding: 15px;
+        color: white;
+        box-shadow: 0px 1px 6px 0px black;
+        margin: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        font-size: large;
+
+        .link {
+            padding: 12px;
+            background-color: inherit;
+
+            &:hover {
+                color: $clr1;
+            }
+            &:first-of-type {
+                grid-column: -3/-2;
+            }
+            &:last-of-type {
+                grid-column: -2/-1;
+            }
+        }
+        .logo {
+            background-color: inherit;
+            margin: auto;
+            font-family: cursive;
+            font-size: 1.5em;
+        }
+        &nav .active {
+            color: $clr1;
+        }
+    }
+}
